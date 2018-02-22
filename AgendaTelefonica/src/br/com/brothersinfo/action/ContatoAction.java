@@ -24,6 +24,12 @@ public class ContatoAction extends ActionSupport {
 	public Long codigoContato;
 	public String nomeContato = null;
 	public String INDRA = "VIVO";
+	
+	public String UM = "UM";
+	
+	public String DOIS = "DOIS";
+	
+	public String TRES = "TRES";
 
 	public String getNomeContato() {
 		return nomeContato;
