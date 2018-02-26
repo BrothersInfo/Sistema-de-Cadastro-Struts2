@@ -23,6 +23,15 @@ public class ContatoAction extends ActionSupport {
 	public List<Endereco> listaCidades;
 	public Long codigoContato;
 	public String nomeContato = null;
+  
+	public String INDRA = "VIVO";
+	
+	public String UM = "UM";
+	
+	public String DOIS = "DOIS";
+	
+	public String TRES = "TRES";
+
 	public String TESTE = "TESTE";
 
 	public String getNomeContato() {
