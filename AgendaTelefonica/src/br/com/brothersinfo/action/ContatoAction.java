@@ -23,6 +23,7 @@ public class ContatoAction extends ActionSupport {
 	public List<Endereco> listaCidades;
 	public Long codigoContato;
 	public String nomeContato = null;
+  
 	public String INDRA = "VIVO";
 	
 	public String UM = "UM";
@@ -30,6 +31,8 @@ public class ContatoAction extends ActionSupport {
 	public String DOIS = "DOIS";
 	
 	public String TRES = "TRES";
+
+	public String TESTE = "TESTE";
 
 	public String getNomeContato() {
 		return nomeContato;
@@ -64,8 +67,7 @@ public class ContatoAction extends ActionSupport {
 		return SUCCESS;
 	}
 
-	@Action(value = "alterarContato", results = {
-			@Result(name = "success", location = "/paginas/alterarCadastro.jsp") })
+	@Action(value = "alterarContato", results = { @Result(name = "success", location = "/paginas/alterarCadastro.jsp") })
 	public String alteraContato() {
 		EnderecoDAO enderecoDAO = new EnderecoDAO();
 		ContatoDAO dao = new ContatoDAO();
@@ -75,8 +77,7 @@ public class ContatoAction extends ActionSupport {
 		return SUCCESS;
 	}
 
-	@Action(value = "confirmarAlteracao", results = {
-			@Result(name = "success", location = "/paginas/listarContatos.jsp") })
+	@Action(value = "confirmarAlteracao", results = { @Result(name = "success", location = "/paginas/listarContatos.jsp") })
 	public String confirmarAlteracao() {
 		ContatoDAO dao = new ContatoDAO();
 		dao.alterar(contato);
