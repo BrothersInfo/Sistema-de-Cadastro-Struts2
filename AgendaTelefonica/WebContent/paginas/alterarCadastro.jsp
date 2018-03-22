@@ -15,7 +15,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container">
+	<div class="container" style="font-color: blue;">
 		<nav class="navbar navbar-inverse navbar-fixed-top"
 			style="padding-top: 80px;">
 			<div class="container-fluid">
